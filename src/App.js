@@ -13,7 +13,9 @@ import 'slick-carousel/slick/slick-theme.css';
 function App() {
   return (
     <div className="App">
+      {/* Use imported Header */}
        <Header />
+       {/* Create routes for each view */}
       <Routes>
         <Route index element={<Home />}/>
         <Route path='/about-me' element={<AboutMe />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path='*' element={<Navigate to='/'/>}/>
         
       </Routes>
+      {/* Use imported Contact information */}
       <Contact></Contact>
     </div>
   );

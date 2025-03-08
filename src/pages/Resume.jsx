@@ -1,11 +1,14 @@
 import React, {useState} from 'react'
 import qa from "../images/qa.jpg"
 const Resume = () => {
+  // Set the state. Make a new item and a function to change it, set the original state.
   const [jobNum, setJobNum] = useState('');
       
+  // Function to change the value to the value in the input box
       const updateNum = (event) => {
         setJobNum(event.target.value);
       }
+      // message will change based of the current state of the jobNum value
 
       let message = "";
        if (jobNum < 1) {
@@ -18,7 +21,7 @@ const Resume = () => {
         message = "That's a lot of jobs!";
       }
 
-      
+      //array with my work information that will be pulled
   const jobArray=[
     {
     'company':'Pomelo Travel',
@@ -49,6 +52,7 @@ const Resume = () => {
       />
       <p>{message}</p>
       <div id="allJobs">
+        {/* uses the array and creates a box for each of them with the right information */}
       {jobArray.map((job, index) => (
           <div key={index} className="job">
             <h3><strong>Position/Positions: </strong>{job.position}</h3>

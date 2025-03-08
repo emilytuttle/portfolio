@@ -13,12 +13,14 @@ import toDo2 from "../images/projects/toDo2.png"
 import codeHero from "../images/code.jpg"
 
 const Projects = () => {
+  // Set the state. Make a new item and a function to change it, set the original state.
   const [color, setColor] = useState('white');
-    
+    // function to change the color state when something is typed
     const updateColor = (event) => {
       setColor(event.target.value);
     }
   
+    // settings for the carousel
   const settings = {
     dots: true,
     arrows: true,

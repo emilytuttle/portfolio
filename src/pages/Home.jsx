@@ -2,8 +2,10 @@ import React, {useState} from 'react'
 import heroImage from '../images/work.jpg'
 
 const Home = () => {
+  // Set the state. Make a new item and a function to change it, set the original state.
   const [name, setName] = useState(true);
   
+  // make a function to change the name when event listeners notice it when the user starts typing in the box that has an even listener attached
   const updateName = (event) => {
     setName(event.target.value);
   }
@@ -16,6 +18,7 @@ const Home = () => {
       
       <div>What is your name?</div>
       <input
+      // Add event listener
         type="text" value={name} onChange={updateName}placeholder="Enter your name"
       />
       {name && <h2>Welcome, {name}!</h2>}

@@ -5,12 +5,15 @@ import classes from './Navbar.module.css'
 
 const Navbar = () => {
 
+    // Make it clear which link is the current view by making a style that makes it different from the others
+
     let activeStyle = {
         'font-weight': 'bold'
 
       };
     
   return (
+    // Create the navbar with the NavLinks that match those made in App.js so that it will show the right view, also add or remove the active style when needed
     <nav className={classes.mainNav}>
         <ul>
         <li >

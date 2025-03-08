@@ -6,9 +6,11 @@ import climb from '../images/climb.JPG'
 import Slider from "react-slick";
 
 const AboutMe = () => {
+  // Add the state of the weather so that it is dynamic and doesn't need to be hardcoded. Make a null value of weather and make a function that can change it
   const [weather, setWeather] = useState(null);
+  // Use a weather API string set to SLC
   let forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.7608&lon=-111.8910&appid=53778186298c1e2280bfff587895ed1d&units=imperial'
-  
+  // Use useEffect to do an async function to make an api call
     useEffect(() => {
       const fetchWeather = async () => {
         try {
@@ -26,7 +28,7 @@ const AboutMe = () => {
               messageBlock = "That's warm enough, I'm going on climbing!";
             }
   
-            // Set weather data to state
+            // Set weather data to state from the null value it was at the satrt
             setWeather({
               city: data.city.name,
               population: data.city.population,
@@ -51,7 +53,7 @@ const AboutMe = () => {
   
   
 
-  
+  // settings to set the carousel and show different things on click
   const settings = {
     dots: true,
     arrows: true,
@@ -65,6 +67,7 @@ const AboutMe = () => {
       <img src={backdrop} alt="hero" className="hero-image num2"/>
       
       <div className="aboutContainer">
+        {/* Everthing in the slider becomes an element it cycles through, they are in divs for styling ease to work against the extra div dlider adds */}
       <Slider {...settings} >
         <div className='slider-pic'><img src={portrait} alt="portrait" id="portrait" /></div>
         <div className='slider-pic'><img src={alaska} alt="portrait" id="portrait" /></div>
@@ -87,6 +90,7 @@ const AboutMe = () => {
                 Everyone knows that the weather can play a role what we do! Check out tomorrow's forecast in Salt Lake City to see what I might be up to!
               </p>
               <div id="weather-container">
+                {/* use the data from the new weather object set in state after making an api call */}
                 <p>City: {weather.city}</p>
                 <p>Date & Time: {weather.dateTime}</p>
                 <p>General Description: {weather.description}</p>

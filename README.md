@@ -23,7 +23,6 @@ Transition between pages: I use BrowserRouter from React in my index.js file. It
 
 I used VSCode to develop the software. I used Chrome to see the live updates when my project was running
 
-{Describe the programming language that you used and any libraries.}
 I used React.js. I needed useState, useEffect, ReactDom, and BrowserRouter to make changes dynamically and to move between pages.
 
 # Useful Websites
