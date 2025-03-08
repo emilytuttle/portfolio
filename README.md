@@ -5,7 +5,7 @@ To start this program, you can clone the repo, use npm i to install all the depe
 
 I wrote this software to practice with a new technology, and work on my routing. I also wanted to try different interactive elements that I haven't done before, such as image and content sliders.
 
-[Software Demo Video](https://youtu.be/Q-7HSuBwlmw)
+[Software Demo Video](https://youtu.be/uQhiuwl1cxI)
 
 # Web Pages
 
