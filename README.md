@@ -5,13 +5,10 @@ To start this program, you can clone the repo, use npm i to install all the depe
 
 I wrote this software to practice with a new technology, and work on my routing. I also wanted to try different interactive elements that I haven't done before, such as image and content sliders.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
-
 [Software Demo Video](https://youtu.be/Q-7HSuBwlmw)
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
 Transition between pages: I use BrowserRouter from React in my index.js file. It wraps my App component, so that I can use routing to move from one page to another without reloading the whole site. My App.js file determines the routes. It imports all of my pages, and creates a route path for each
 
 -Home page: The home page gives general page direction. It lets the user know they can use the links above to navigate, and where they can get my contact information. A personalized greeting is displayed dynamically if the user enters their name, in which case it is shown back to them to say hello. 
@@ -24,7 +21,6 @@ Transition between pages: I use BrowserRouter from React in my index.js file. It
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
 I used VSCode to develop the software. I used Chrome to see the live updates when my project was running
 
 {Describe the programming language that you used and any libraries.}
@@ -32,7 +28,6 @@ I used React.js. I needed useState, useEffect, ReactDom, and BrowserRouter to ma
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [React Slick](https://react-slick.neostack.com/)
 * [Stack Overflow](https://stackoverflow.com/questions/8824831/make-div-stay-at-bottom-of-pages-content-all-the-time-even-when-there-are-scrol)
 * [W3 Schools](https://www.w3schools.com/react/react_usestate.asp)
@@ -40,7 +35,7 @@ I used React.js. I needed useState, useEffect, ReactDom, and BrowserRouter to ma
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+
 * I will use a database to load data about work history or projects.
 * I can load projects dynamically from an array instead of hardcoding each into their own divs
 * Improve some CSS that looks a little bit funny, the carousels had difficult CSS for me and I could improve that.
