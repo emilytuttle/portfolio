@@ -1,0 +1,209 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-image {
+  width:100%;
+  height: 290px;
+  object-fit: cover;
+  object-position: 25% 75%;
+}
+
+.contact-info {
+  
+  position: fixed;
+  bottom: 10px;
+  right: 35px;
+}
+.contact-icon {
+  width: 79px;
+  border-radius: 50px;
+}
+
+.contact-icon:hover {
+  cursor: pointer;
+}
+
+#portrait {
+  width: 150px;
+}
+
+.num2 {
+  object-position: 35% 65%;
+}
+
+.slider {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 30px
+}
+
+.projimg {
+  width: 450px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px 30px 10px 10px
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%; 
+  max-width: 800px; 
+  border: 2px solid black;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.links a {
+  color: black
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.format-fix {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.imagesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info {
+  width: 300px;
+}
+
+.aboutContainer .slick-list, .slick-track {
+  width: 300px;
+  content: center;
+}
+
+#proj-container {
+  max-width: 100%;
+  width: 100%; 
+  margin: 0 auto; 
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.info .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.slick-dots {
+  margin-bottom: 30px;
+}
+
+#contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid rgb(169, 169, 169);
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+  position: fixed;
+  bottom: 150px;
+  right: 30px
+}
+
+#contact-box a {
+  color: black;
+  text-decoration: underline;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  flex-direction: column;
+  border: 2px solid #282c34;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#allJobs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider-pic {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

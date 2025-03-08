@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+nav ul  li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.mainNav {
+    width: 50vw;
+}

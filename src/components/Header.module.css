@@ -1,0 +1,20 @@
+:root {
+    --background-color1: rgb(48, 55, 69);
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: var(--background-color1);
+    justify-content: space-between;
+}
+
+.navName {
+    width: 30vw;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
